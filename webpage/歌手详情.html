@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>民谣馆-歌手详情</title>
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../layui-v2.3.0/layui/css/layui.css" />
+	<link rel="stylesheet" href="../css/myg_musics.css" />
+</head>
+<body>
+	<!--页头开始-->
+	<header>
+		<div class="myg_header_topblock">
+			<div class="myg_header_logo myg_margin_left_25"></div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">音乐馆</a></li>
+					<li><a href="../Turnpage/index.html" target="_blank">民谣歌手合集</a></li>
+					<li><a href="../webpage/mymusic.html">我的音乐</a></li>
+				</ul>
+			</nav>
+			<div class="myg_header_user_block">
+				<div class="myg_header_user">
+						<img src="../img/gougou.jpg" class="myg_header_user_img"/>
+						<div class="myg_header_userinfo">
+							<div class="myg_header_userinfo_top">
+								<img src="../img/gougou.jpg" class="myg_header_userinfo_img"/>
+								<span class="myg_header_userinfo_name">星辰大海</span>
+							</div>
+							<div class="myg_header_userinfo_bottom">
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_mymusicbtn">我的音乐</div>
+								</div>
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_tuichubtn">退出登录</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="myg_header_searchbox">
+		        <form>
+		            <input type="text" placeholder="歌曲/歌手/MV">
+					<i class="layui-icon layui-icon-search myg_header_searchbtn" style="font-size: 25px; color: #1E9FFF;"></i>	
+		        </form>
+			</div>			
+		</div>
+		<div class="myg_header-bottomblock">
+			<div class="myg_header_index_nav">
+				<ul>
+					<li style="margin-left: 10px;"><a href="../index.html"></a>首页</li>
+					<li><a href="../webpage/专辑.html">专辑</a></li>
+					<li class="myg_header_index_nav_active"><a href="../webpage/歌手.html">歌手</a></li>
+					<li><a href="../webpage/分类.html">分类</a></li>
+					<li><a href="../webpage/mv.html">Mv</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--页头结束-->
+	<div id="myg_singerxq_bg"  class="myg_module_BG">
+		<!--歌手介绍模块开始-->
+		<div id="myg_singerxq_module_introduce">
+			<div class="myg_singerxq_introduce myg_margin_top_30">
+				<img src="../img/singer_photo/chenli/chenli.jpeg" />
+				<div class="myg_singerxq_introduce_text">
+					<p class="myg_singerxq_introduce_name">陈粒</p>
+					<p class="myg_singerxq_introduce_jiesao">别名：粒粒&nbsp;名族：汉族&nbsp;代表作：小梦大半、小半、奇妙能力歌，假数据大师级大神卡收到</p>
+					<a class="myg_singerxq_xiangqing">[更多]</a>
+					<div class="myg_singerxq_introduce_btn"><i class="layui-icon layui-icon-play "></i>播放歌手热门歌曲</div>
+				</div>
+			</div>
+		</div>
+		<!--歌手介绍模块结束-->
+		<!--歌手热门歌曲模块开始-->
+		<div id="myg_singerxq_module_hotsong">
+			<div class="myg_singerxq_hotsong_header">
+				<span class="myg_singerxq_hotsong_header_left">热门歌曲</span>
+				<span class="myg_singerxq_hotsong_header_right"><a>全部<i class="layui-icon layui-icon-right "></i></a></span>
+			</div>
+			<div class="myg_singerxq_hotsong">
+				<div class="myg_singerxq_song_header">
+						<div><span>歌曲</span></div>
+						<div>专辑</div>
+						<div>时长</div>
+				</div>
+					<ul id="singerxqview" class="myg_singerxq_hotsong_body">
+						<!--<li class="myg_singerxq_classifyblock_music myg_singerxq_classifyblock_music_odd">
+							<div class="myg_singerxq_classifyblock_music_name">
+								<span>夏天的风</span>
+								<div class="myg_singerxq_musicbtngroup">
+									<ul class="myg_singerxq_musicbtngroup_icon">								
+										<li><img src="../img/icon/播放.png" alt="播放"/></li>
+										<li><img src="../img/icon/添加.png" alt="添加"/></li>
+										<li><img src="../img/icon/下载.png" alt="下载"/></li>
+										<li><img src="../img/icon/分享.png" alt="分享"/></li>
+									</ul> 
+								</div>
+							</div>
+							<div class="myg_singerxq_classifyblock_music_album">寻宝游戏</div>
+							<div class="myg_singerxq_classifyblock_music_time">04:27</div>
+						</li>-->
+					</ul>
+			</div>
+		</div>
+		<!--歌手热门歌曲模块结束-->
+		<!--歌手热门MV模块开始-->
+		<div id="myg_singerxq_module_hotmv">
+			<div class="myg_singerxq_hotmv_header">
+				<span class="myg_singerxq_hotsong_header_left">精彩Mv</span>
+				<span class="myg_singerxq_hotsong_header_right"><a>全部<i class="layui-icon layui-icon-right "></i></a></span>
+			</div>
+			<div class="myg_singerxq_hotmv_block">
+		      	<img src="../img/a.jpg" />
+		      	<p class="myg_singerxq_hotmv_block_name">小半（好妹妹乐队"自在如风"巡演）</p>
+		      	<div class="myg_singerxq_hotmv_block_countimg"></div>
+		      	<div class="myg_dongqing_singer myg_singerxq_hotmv_block_count">316</div>
+		    </div>
+		    <div class="myg_singerxq_hotmv_block">
+		      	<img src="../img/b.jpg" />
+		      	<p class="myg_singerxq_hotmv_block_name">小半（好妹妹乐队"自在如风"巡演）</p>
+		      	<div class="myg_singerxq_hotmv_block_countimg"></div>
+		      	<div class="myg_dongqing_singer myg_singerxq_hotmv_block_count">316</div>
+		    </div>
+		</div>			
+		<!--歌手热门MV模块结束-->
+	</div>
+	<!--页脚开始-->
+	<footer class="myg_margin_top_50" >
+		<div class="myg_footer_text">
+			<a href="#">关于民谣音乐馆</a> | 
+			<a href="#">关于作者</a> | 
+			<a href="#">关于歌曲</a><br />
+			<span class="myg_footer_copy">Copyright &copy;2018-2020 codger.All Rights Reserved</span>
+		</div>
+	</footer>
+	
+	<script id="singerxq" type="text/html">
+				{{#  layui.each(d, function(index, item){ }}
+				{{# var i=index+1;console.log(d[index]); if(i%2!=0){ }}
+				<li class="myg_singerxq_classifyblock_music myg_mygmusic_classifyblock_music_odd">
+				{{# }else{ }}
+				<li class="myg_singerxq_classifyblock_music myg_mygmusic_classifyblock_music_both">
+				{{# } }}
+					<div class="myg_singerxq_classifyblock_music_name">
+						<span>{{d[index].song}}</span>
+						<div class="myg_singerxq_musicbtngroup">
+							<ul class="myg_singerxq_musicbtngroup_icon">								
+								<li><img src="../img/icon/播放.png" alt="播放"/></li>
+								<li><img src="../img/icon/添加.png" alt="添加"/></li>
+								<li><img src="../img/icon/下载.png" alt="下载"/></li>
+								<li><img src="../img/icon/分享.png" alt="分享"/></li>
+							</ul> 
+						</div>
+					</div>
+					<div class="myg_singerxq_classifyblock_music_album">{{item.zhuanji}}</div>
+					<div class="myg_singerxq_classifyblock_music_time">{{item.time}}</div>
+				</li>
+				{{#  }); }}
+	</script>
+	<script type="text/javascript" src="../js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script type="text/javascript" src="../js/myg_public.js" ></script>
+	<script type="text/javascript" src="../layui-v2.3.0/layui/layui.js" ></script>
+</body>
+</html>

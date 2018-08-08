@@ -1,0 +1,430 @@
+/* 
+ * 名称：css3常用动画（2d,3d）
+ * 作者：飞鸿w
+ * 版本：v-1.0.0
+ * Date：2018-6-18
+ * Time：17:00
+ * QQ：1499639115
+ * 兼容性：平常css3动画兼容性,ie10+,firefox16+,chrome43+,safari9+,opera30+,android(-webkit)
+ * 封装原因：由于个人认为layui,bootstrap等框架在纯css3动画方面并不完美、
+      灵活，在使用中难以进行精确控制，达到想要效果。（毕竟不是自己的，自己的永远是最熟悉、顺手、灵活的）
+      因此，自己整理封装了如下css3一些常见动画，以供平常方便、快速使用。
+ * 主要包括：
+	2d效果:
+		1：渐隐（淡出）
+		2：渐现（淡入）
+		3：旋转
+		4：平滑放大/缩小
+		5：弹簧式放大/缩小
+	3d效果：
+		1:3d旋转（x轴,y轴,z轴,整合(3轴)）
+		2:滑入滑出（top,right,bottom,left）
+*/
+/*开启动画*/
+/*默认动画播放开始-完成时间为1s,可选：3s,5s,10s,20s,30s*/
+.fsg-animation{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;/*规定动画未播放时状态*/
+	animation-fill-mode: both;
+}
+.fsg-animation-3{
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fsg-animation-5{
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fsg-animation-10{
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fsg-animation-20{
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.fsg-animation-30{
+	-webkit-animation-duration: 30s;
+	animation-duration: 30s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/*无限循环执行动画*/
+.fsg-anim-infinite{
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+/*动画延迟，默认1s,可选：0.25s,0.5s,0.75s,2s,3s*/
+.fsg-anim-delay{
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.fsg-anim-delay-025s{
+	-webkit-animation-delay:.25s;
+	animation-delay:.25s;
+}
+.fsg-anim-delay-05s{
+	-webkit-animation-delay:.5s;
+	animation-delay:.5s;
+}
+.fsg-anim-delay-075s{
+	-webkit-animation-delay:.75s;
+	animation-delay:.75s;
+}
+.fsg-anim-delay-2{
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.fsg-anim-delay-3{
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+/*渐隐（淡出）*/
+@-webkit-keyframes gohide{
+	from{opacity: 1;}
+	to{opacite:0}
+}
+@keyframes gohide{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+.fsg-anim-gohide{
+	-webkit-animation-name: gohide;
+	animation-name: gohide;	
+}
+/*渐现（淡入）*/
+@-webkit-keyframes goshow{
+	from{opacity: 0;}
+	to{opacite:1}
+}
+@keyframes goshow{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.fsg-anim-goshow{
+	-webkit-animation-name: goshow;
+	animation-name: goshow;	
+}
+/*平滑放大*/
+@-webkit-keyframes largen{
+	from{-webkit-transform: scale(.5);opacity: .3;}
+	to{-webkit-transform: scale(1.0);opacity: 1;}
+}
+@keyframes largen{
+	from{transform: scale(.5);opacity: .3;}
+	to{transform: scale(1);opacity: 1;}
+}
+.fsg-anim-largen{
+	-webkit-animation-name: largen;
+	animation-name: largen;	
+}
+/*平滑缩小*/
+@-webkit-keyframes lessen{
+	from{-webkit-transform: scale(1.5);opacity: .3;}
+	to{-webkit-transform: scale(1);opacity: 1;}
+}
+@keyframes lessen{
+	from{transform: scale(1.5);opacity: .3;}
+	to{transform: scale(1);opacity: 1;}
+}
+.fsg-anim-lessen{
+	-webkit-animation-name: lessen;
+	animation-name: lessen;		
+}
+/*弹簧式放大*/
+@-webkit-keyframes largen-spring{
+	from{-webkit-transform: scale(.5);opacity: .3;}
+	80%{-webkit-transform: scale(1.2);opacity: .8;}
+	to{-webkit-transform: scale(1);opacity: 1;}
+}
+@keyframes largen-spring{
+	from{transform: scale(.5);opacity: .3;}
+	80%{transform: scale(1.2);opacity: .8;}
+	to{transform: scale(1);opacity: 1;}
+}
+.fsg-anim-largen-spring{
+	-webkit-animation-name: largen-spring;
+	animation-name: largen-spring;	
+}
+/*弹簧式缩小*/
+@-webkit-keyframes lessen-spring{
+	from{-webkit-transform: scale(1.5);opacity: .3;}
+	80%{-webkit-transform: scale(.7);opacity: .8;}
+	to{-webkit-transform: scale(1);opacity: 1;}
+}
+@keyframes lessen-spring{
+	from{transform: scale(1.5);opacity: .3;}
+	80%{transform: scale(.7);opacity: .8;}
+	to{transform: scale(1);opacity: 1;}
+}
+.fsg-anim-lessen-spring{
+	-webkit-animation-name: lessen-spring;
+	animation-name: lessen-spring;	
+}
+/*360°旋转*/
+@-webkit-keyframes rotate{
+	from {
+		-webkit-transform: rotate(0)
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+	}
+}
+@keyframes rotate{
+	from {
+		transform: rotate(0)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+.fsg-anim-rotate{
+	-webkit-animation-name: rotate;
+	animation-name: rotate;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+/**/
+
+
+
+
+
+/*3d效果*/
+/*3d旋转,x轴*/
+@-webkit-keyframes rotate3d-x {
+	from {
+		-webkit-transform: rotateX(0deg);
+	}
+	to {
+		-webkit-transform: rotateX(360deg);
+	}
+}
+
+@keyframes rotate3d-x {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(360deg);
+	}
+}
+
+.fsg-anim-rotate3d-x {
+	-webkit-animation-name: rotate3d-x;
+	animation-name: rotate3d-x;
+}
+/*3d旋转,y轴*/
+@-webkit-keyframes rotate3d-y {
+	from {
+		-webkit-transform: rotateY(0deg);
+	}
+	to {
+		-webkit-transform: rotateY(360deg);
+	}
+}
+
+@keyframes rotate3d-y {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+.fsg-anim-rotate3d-y {
+	-webkit-animation-name: rotate3d-y;
+	animation-name: rotate3d-y;
+}
+
+/*3d旋转,z轴*/
+@-webkit-keyframes rotate3d-z {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+
+@keyframes rotate3d-z {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.fsg-anim-rotate3d-z {
+	-webkit-animation-name: rotate3d-z;
+	animation-name: rotate3d-z;
+}
+
+/*3d旋转，x,y,z整合。ie11依旧无法支持rotate3d()方法*/
+@-webkit-keyframes rotate3d {
+	from {
+		-ms-transform: rotate3d(1,1,1,0deg);
+		-webkit-transform: rotate3d(1,1,1,0deg);
+	}
+	to {
+		-ms-transform: rotate3d(1,1,1,360deg);
+		-webkit-transform: rotate3d(1,1,1,360deg);
+	}
+}
+
+@keyframes rotate3d {
+	from {
+		-ms-transform: rotate3d(1,1,1,0deg);
+		transform: rotate3d(1,1,1,0deg);
+	}
+	to {
+		-ms-transform: rotate3d(1,1,1,360deg);
+		transform: rotate3d(1,1,1,360deg);
+	}
+}
+
+.fsg-anim-rotate3d {
+	-webkit-animation-name: rotate3d;
+	animation-name: rotate3d;
+}
+
+
+/*滑入（top,right,bottom,left）*/
+/*左侧向右滑入left*/
+@-webkit-keyframes huaru-left{
+	from {
+		-webkit-transform: translate3d(-50%, 0, 0);
+		opacity: 0;
+	}			
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes huaru-left{
+	from {
+		transform: translate3d(-50%, 0, 0);
+		opacity: 0;
+	}			
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+.fsg-anim-left {
+	-webkit-animation-name: huaru-left;
+	animation-name: huaru-left;
+}
+/*右侧向左滑入right*/
+@-webkit-keyframes huaru-right{
+	from {
+		-webkit-transform: translate3d(50%, 0, 0);
+		opacity: 0;
+	}			
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes huaru-right{
+	from {
+		transform: translate3d(50%, 0, 0);
+		opacity: 0;
+	}			
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+.fsg-anim-right {
+	-webkit-animation-name: huaru-right;
+	animation-name: huaru-right;
+}
+/*上侧向下滑入top*/
+@-webkit-keyframes huaru-top{
+	from {
+		-webkit-transform: translate3d(0, -50%, 0);
+		opacity: 0;
+	}			
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes huaru-top{
+	from {
+		transform: translate3d(0, -50%, 0);
+		opacity: 0;
+	}			
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+.fsg-anim-top {
+	-webkit-animation-name: huaru-top;
+	animation-name: huaru-top;
+}
+/*下边向上滑入bottom*/
+@-webkit-keyframes huaru-bottom{
+	from {
+		-webkit-transform: translate3d(0, 50%, 0);
+		opacity: 0;
+	}			
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes huaru-bottom{
+	from {
+		transform: translate3d(0, 50%, 0);
+		opacity: 0;
+	}			
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+.fsg-anim-bottom {
+	-webkit-animation-name: huaru-bottom;
+	animation-name: huaru-bottom;
+}
+
+/*微微向上滑动*/
+@-webkit-keyframes huaru-slight-bottom{
+	from {
+		-webkit-transform: translate3d(0, 20px, 0);
+		opacity: 0;
+	}			
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes huaru-slight-bottom{
+	from {
+		transform: translate3d(0, 20px, 0);
+		opacity: 0;
+	}			
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+.fsg-anim-slight-bottom {
+	-webkit-animation-name: huaru-slight-bottom;
+	animation-name: huaru-slight-bottom;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>民谣馆-歌手</title>
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../layui-v2.3.0/layui/css/layui.css" />
+	<link rel="stylesheet" href="../css/myg_musics.css" />
+	<link rel="stylesheet" href="../css/fsg_animation.css" />
+</head>
+<body>
+	<!--页头开始-->
+	<header>
+		<div class="myg_header_topblock">
+			<div class="myg_header_logo myg_margin_left_25"></div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">音乐馆</a></li>
+					<li><a href="../Turnpage/index.html" target="_blank">民谣歌手合集</a></li>
+					<li><a href="../webpage/mymusic.html">我的音乐</a></li>
+				</ul>
+			</nav>
+			<div class="myg_header_user_block">
+				<div class="myg_header_user">
+						<img src="../img/gougou.jpg" class="myg_header_user_img"/>
+						<div class="myg_header_userinfo">
+							<div class="myg_header_userinfo_top">
+								<img src="../img/gougou.jpg" class="myg_header_userinfo_img"/>
+								<span class="myg_header_userinfo_name">星辰大海</span>
+							</div>
+							<div class="myg_header_userinfo_bottom">
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_mymusicbtn"><a href="登录11.html">我的音乐</a></div>
+								</div>
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_tuichubtn">退出登录</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="myg_header_searchbox">
+		        <form>
+		            <input type="text" placeholder="歌曲/歌手/MV">
+					<i class="layui-icon layui-icon-search myg_header_searchbtn" style="font-size: 25px; color: #1E9FFF;"></i>	
+		        </form>
+			</div>			
+		</div>
+		<div class="myg_header-bottomblock">
+			<div class="myg_header_index_nav">
+				<ul>
+					<li style="margin-left: 10px;"><a href="../index.html"></a>首页</li>
+					<li><a href="../webpage/专辑.html">专辑</a></li>
+					<li class="myg_header_index_nav_active">歌手</li>
+					<li><a href="../webpage/分类.html">分类</a></li>
+					<li><a href="../webpage/mv.html">Mv</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--页头结束-->
+	<!--pagebgimg模块开始-->
+	<div class="myg_module_BG myg_pageimg1">
+		<img src="../img/singerimg.jpg"  />
+	</div>
+	<!--pagebgimg模块结束-->
+	<!--歌手分类模块开始-->
+	<div class="myg_module_BG myg_padding_top_30">
+		<div id="myg_singer_module_category">
+			<div class="myg_singer_category">
+				<div class="myg_singer_category_name myg_margin_left_50">热门</div>
+				<div class="myg_singer_category_content myg_margin_left_25">
+					<ul>
+						<li>A</li>
+						<li>B</li>
+						<li>C</li>
+						<li>D</li>
+						<li>E</li>
+						<li>F</li>
+						<li>G</li>
+						<li>H</li>
+						<li>I</li>
+						<li>J</li>
+						<li>K</li>
+						<li>L</li>
+						<li>M</li>
+						<li>N</li>
+						<li>O</li>
+						<li>P</li>
+						<li>Q</li>
+						<li>R</li>
+						<li>S</li>
+						<li>T</li>
+						<li>U</li>
+						<li>V</li>
+						<li>W</li>
+						<li>X</li>
+						<li>Y</li>
+						<li>Z</li>
+					</ul>
+				</div>
+			</div>
+			<div class="myg_singer_category myg_margin_top_20">
+				<div class="myg_singer_category_name myg_margin_left_50">全部</div>
+				<div class="myg_singer_category_content myg_margin_left_25">
+					<ul class="myg_singer_category_quanbu">
+						<li>内地</li>
+						<li>港台</li>
+						<li>其他</li>
+					</ul>
+				</div>
+			</div>
+			<div class="myg_singer_category myg_margin_top_20">
+				<div class="myg_singer_category_name myg_margin_left_50">全部</div>
+				<div class="myg_singer_category_content myg_margin_left_25">
+					<ul class="myg_singer_category_sex">
+						<li>男</li>
+						<li>女</li>
+						<li>其他</li>
+					</ul>
+				</div>
+			</div>
+			<div class="myg_singer_category myg_margin_top_20">
+				<div class="myg_singer_category_name myg_margin_left_50">全部</div>
+				<div class="myg_singer_category_content myg_margin_left_25">
+					<ul class="myg_singer_category_leixing">
+						<li>最新</li>
+						<li>地方</li>
+						<li>小清新</li>
+						<li>校园</li>
+						<li>人文</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--歌手img模块开始-->
+		<div id="myg_singer_imgblock" class="swiper-container myg_margin_top_30">
+			<div class="swiper-wrapper">
+				<!--第一页-->
+				<div class="swiper-slide">
+					<div class="myg_singer_imgpage">
+						<!--第一行-->
+						<div class="myg_singer_imgrow">
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/chenli/chenli.jpeg"/ class="fsg-anim-rotate3d-y">
+								<p>陈粒</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/chenxiaoxiong/chenxiaoxiong.jpg"  />
+								<p>陈小熊</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/erbai/erbai.jpg"  />
+								<p>贰佰</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/huazhou/huazhou.png"  />
+								<p>花粥</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/laolang/laolang.png"  />
+								<p>陈小熊</p>
+							</div>
+						</div>
+						<!--第二行-->						
+						<div class="myg_singer_imgrow">
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/lizhi/lizhi.png"  />
+								<p>老狼</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/madi/madi.png"  />
+								<p>李志</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/pushu/pushu.png"  />
+								<p>朴树</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/songdongye/songdongye.png"  />
+								<p>宋冬野</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/wanxiaoli/wanxiaoli.png"  />
+								<p>万晓利</p>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第二页-->
+				<div class="swiper-slide">
+					<div class="myg_singer_imgpage">
+						<div class="myg_singer_imgrow">
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/songdongye/songdongye.png"  />
+								<p>宋冬野</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/wanxiaoli/wanxiaoli.png"  />
+								<p>万晓利</p>								
+							</div>
+						</div>
+						<div class="myg_singer_imgrow">
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/songdongye/songdongye.png"  />
+								<p>宋冬野</p>
+							</div>
+							<div class="myg_singer_imgphotograph">
+								<img src="../img/singer_photo/wanxiaoli/wanxiaoli.png"  />
+								<p>万晓利</p>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第三页-->
+				<div class="swiper-slide">这是第三页</div>
+				<!--第四页-->
+				<div class="swiper-slide">这是第四页</div>
+			</div>
+			<!--分页器 -->
+		    <div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next swiper-button-black"></div>
+			<div class="swiper-button-prev swiper-button-black"></div>
+		</div>
+		<!--歌手img模块结束-->
+	</div>
+	<!--歌手分类模块结束-->
+	<!--页脚开始-->
+	<footer class="myg_margin_top_50" >
+		<div class="myg_footer_text">
+			<a href="#">关于民谣音乐馆</a> | 
+			<a href="#">关于作者</a> | 
+			<a href="#">关于歌曲</a><br />
+			<span class="myg_footer_copy">Copyright &copy;2018-2020 codger.All Rights Reserved</span>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script type="text/javascript" src="../js/myg_public.js" ></script>
+	<script type="text/javascript" src="../layui-v2.3.0/layui/layui.js" ></script>
+</body>
+</html>

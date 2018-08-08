@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>民谣馆-专辑详情</title>
+	<link rel="stylesheet" href="../layui-v2.3.0/layui/css/layui.css" />
+	<link rel="stylesheet" href="../css/myg_musics.css" />
+</head>
+<body>
+	<!--头部开始-->
+	<header>
+		<div class="myg_header_topblock">
+			<div class="myg_header_logo myg_margin_left_25"></div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">音乐馆</a></li>
+					<li><a href="../Turnpage/index.html" target="_blank">民谣歌手合集</a></li>
+					<li><a href="../webpage/mymusic.html">我的音乐</a></li>
+				</ul>
+			</nav>
+			<div class="myg_header_user_block">
+				<div class="myg_header_user">
+						<img src="../img/gougou.jpg" class="myg_header_user_img"/>
+						<div class="myg_header_userinfo">
+							<div class="myg_header_userinfo_top">
+								<img src="../img/gougou.jpg" class="myg_header_userinfo_img"/>
+								<span class="myg_header_userinfo_name">星辰大海</span>
+							</div>
+							<div class="myg_header_userinfo_bottom">
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_mymusicbtn"><a href="登录11.html">我的音乐</a></div>
+								</div>
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_tuichubtn">退出登录</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="myg_header_searchbox">
+		        <form>
+		            <input type="text" placeholder="歌曲/歌手/MV">
+					<i class="layui-icon layui-icon-search myg_header_searchbtn" style="font-size: 25px; color: #1E9FFF;"></i>	
+		        </form>
+			</div>			
+		</div>
+		<div class="myg_header-bottomblock">
+			<div class="myg_header_index_nav">
+				<ul>
+					<li style="margin-left: 10px;"><a href="../index.html">首页</a></li>
+					<li class="myg_header_index_nav_active"><a href="../webpage/专辑.html">专辑</a></li>
+					<li><a href="../webpage/歌手.html">歌手</a></li>
+					<li><a href="../webpage/分类.html">分类</a></li>
+					<li><a href="../webpage/mv.html">Mv</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--头部结束-->
+	<div class="myg_module_BG" >
+		<!--专辑信息模快开始-->
+		<div id="myg_zhuanjixq_header">
+			<div class="myg_zhuanjixq_header_img"> 
+				<img src="../img/zhuanji/明智之举.jpg" width="250px" height="250px"  alt="专辑封面"/>
+			</div>
+			<div class="myg_zhuanjixq_header_content">
+				<div class="myg_zhuanjixq_header_title">寻宝游戏</div>
+				<div class="myg_margin_top_10">
+					<img src="../img/icon/人物.png" width="28px" height="28px" />
+					<span class="myg_zhuanjixq_header_singer">许嵩</span>
+				</div>
+				<div class="myg_margin_top_10 myg_font_size_18">
+					标签：<span>Pop 流行</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;语言：国语<br />
+				</div>
+				<div class="myg_margin_top_10 myg_font_size_18">
+					发行时间：<span class="myg_zhuanjixq_header_time">2018-7-12</span>
+				</div>
+				<div class="myg_zhuanjixq_header_btns myg_margin_top_30">
+					<div class="myg_zhuanjixq_header_btns_bofang" style="background-color:#31c27c;"><img src="../img/icon/播放（灰）.png" width="28px" height="28px"/>播放全部</div>
+					<div class="myg_zhuanjixq_header_btns_qita"><img src="../img/icon/添加（黑）.png" width="22px" height="22px"/>  添加到</div>
+					<div class="myg_zhuanjixq_header_btns_qita"><img src="../img/icon/下载（黑）.png" width="22px" height="22px"/>  下载</div>
+					<div class="myg_zhuanjixq_header_btns_qita"><img src="../img/icon/分享（黑）.png" width="20px" height="20px"/>  分享</div>
+				</div>
+			</div>
+		</div>
+		<!--专辑信息模快结束-->
+		<!--专辑歌曲模块开始-->
+		<div id="myg_zhuanjixq_songblock">
+			<!--专辑歌曲动态加载块开始-->
+			<div class="myg_zhuanjixq_song">
+				<div class="myg_zhuanjixq_song_header" style="background-color: #FFFFFF;">
+					<div><span>歌曲</span></div>
+					<div>歌手</div>
+					<div>时长</div>
+				</div>
+				<ul id="zhuanjixqview">
+					<li class="myg_zhuanjixq_song_music" style="width: 100%;height: 50px;">
+						<div class="myg_zhuanjixq_song_music_item">1</div>
+						<div class="myg_mygmusic_classifyblock_music_name">
+							<span>明智之举</span>
+							<div class="myg_mygmusic_musicbtngroup">
+								<ul class="myg_mygmusic_musicbtngroup_icon">								
+									<li><img src="../img/icon/播放.png" alt="播放"/></li>
+									<li><img src="../img/icon/添加.png" alt="添加"/></li>
+									<li><img src="../img/icon/下载.png" alt="下载"/></li>
+									<li><img src="../img/icon/分享.png" alt="分享"/></li>
+								</ul> 
+							</div>
+						</div>
+						<div class="myg_mygmusic_classifyblock_music_singer">许嵩</div>
+						<div class="myg_mygmusic_classifyblock_music_time">04:27</div>
+					</li>
+					
+			</ul>
+				
+			</div>
+			<!--专辑歌曲动态加载块结束-->
+			<!--专辑右侧专辑相关块开始-->
+			<div class="myg_zhuanjixq_about">
+				<div class="myg_zhuanjixq_jieshao">
+					<h2 class="myg_font_size_22">简介</h2>
+					<span class="myg_zhuanjixq_zhuanjijieshao">2018年许嵩最新作品《寻宝游戏》，许嵩第7张词曲全创作专辑。 你我他她一生在世，寻寻觅觅各有所求，人人心中皆有秘密宝藏。许嵩在《寻宝游戏》中以松弛、真实的笔触书写对生活的体悟以及对世态的思考，寻访人心、玩味世情。</span>
+				</div>
+				<div class="myg_zhuanjixq_qitazhuanji">
+					<h2>其他精品专辑</h2>
+					<div class="myg_zhuanjixq_qitablock" style="margin-right: 10px;">
+						<img src="../img/fenleiimg/fenleiimg3.jpg" />
+						<p style="display: none;">许嵩</p>
+						<span class="myg_zjtj_name">今年勇</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+					<div class="myg_zhuanjixq_qitablock" style="margin-right: 10px;">
+						<img src="../img/fenleiimg/fenleiimg4.jpg" />
+						<p style="display: none;">夏天Alex</p>
+						<span class="myg_zjtj_name">不再联系</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+					<div class="myg_zhuanjixq_qitablock">
+						<img src="../img/fenleiimg/fenleiimg5.jpg" />
+						<p style="display: none;">薛之谦</p>
+						<span class="myg_zjtj_name">演员</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+					<div class="myg_zhuanjixq_qitablock" style="margin-right: 10px;">
+						<img src="../img/fenleiimg/fenleiimg6.jpg" />
+						<p style="display: none;">林俊杰</p>
+						<span class="myg_zjtj_name">江南</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+					<div class="myg_zhuanjixq_qitablock" style="margin-right: 10px;">
+						<img src="../img/fenleiimg/fenleiimg7.jpg" />
+						<p style="display: none;">张学友</p>
+						<span class="myg_zjtj_name">吻别</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+					<div class="myg_zhuanjixq_qitablock">
+						<img src="../img/fenleiimg/fenleiimg8.jpg" />
+						<p style="display: none;">许嵩</p>
+						<span class="myg_zjtj_name">今年勇</span><br />
+						<span style="color:#777777;">2016-12-12</span>
+					</div>
+				</div>
+			</div>
+			<!--专辑右侧专辑相关块结束-->
+		</div>
+		<!--专辑歌曲模块结束-->
+	</div>
+	<!--页脚开始-->
+	<footer class="myg_margin_top_50">
+		<div class="myg_footer_text">
+			<a href="#">关于民谣音乐馆</a> | 
+			<a href="#">关于作者</a> | 
+			<a href="#">关于歌曲</a><br />
+			<span class="myg_footer_copy">Copyright &copy;2018-2020 codger.All Rights Reserved</span>
+		</div>
+	</footer>
+	
+	
+	<script id="zhuanjixq" type="text/html">
+				{{#  layui.each(d, function(index, item){ }}
+				<li class="myg_zhuanjixq_song_music" style="width: 100%;height: 50px;">
+						<div class="myg_zhuanjixq_song_music_item">{{index+1}}</div>
+						<div class="myg_mygmusic_classifyblock_music_name">
+							<span class="myg_zhuanjixq_itemsong">{{item.song}}</span>
+							<div class="myg_mygmusic_musicbtngroup">
+								<ul class="myg_mygmusic_musicbtngroup_icon">								
+									<li><img src="../img/icon/播放.png" alt="播放"/></li>
+									<li><img src="../img/icon/添加.png" alt="添加"/></li>
+									<li><img src="../img/icon/下载.png" alt="下载"/></li>
+									<li><img src="../img/icon/分享.png" alt="分享"/></li>
+								</ul> 
+							</div>
+						</div>
+						<div class="myg_mygmusic_classifyblock_music_singer">{{item.singe}}</div>
+						<div class="myg_mygmusic_classifyblock_music_time">{{item.time}}</div>
+				</li>
+				{{# if(d.length<=8&&index+1==d.length){ }}
+					<div style="width: 100%;height: 100px;line-height: 100px;text-align: center;">亲，该专辑没有更多歌曲啦~</div>
+				{{# } }}	
+				{{#  }); }}
+	</script>
+	<script type="text/javascript" src="../js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script type="text/javascript" src="../js/myg_public.js" ></script>
+	<script type="text/javascript" src="../layui-v2.3.0/layui/layui.js" ></script>
+</body>
+</html>

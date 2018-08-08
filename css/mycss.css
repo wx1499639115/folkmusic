@@ -1,0 +1,29 @@
+*{
+	padding:0;
+	margin:0;
+}
+.btn{
+	width:200px;
+	height:100px;
+	background-color: #01AAED;
+}
+.Music_img{
+	width:200px;
+	height: 200px;
+	border-radius: 100px;
+	background-image:url(../img/xusong1.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat ;
+}
+.mu{
+	width:400px;
+	height: 400px;
+	background-image:url(../img/dahua4.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat ;
+}
+.my_audio{
+	width:100%;
+	height:auto;
+	background-color: #000000;
+}

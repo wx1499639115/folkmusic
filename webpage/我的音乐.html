@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>民谣馆-我的音乐</title>
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../layui-v2.3.0/layui/css/layui.css" />
+	<link rel="stylesheet" href="../css/myg_musics.css" />
+	<style>
+		header{
+			height: 100px;
+		}
+		footer{
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<!--页头开始-->
+	<header>
+		<div class="myg_header_topblock">
+			<div class="myg_header_logo myg_margin_left_25"></div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">音乐馆</a></li>
+					<li><a href="../Turnpage/index.html" target="_blank">民谣歌手合集</a></li>
+					<li><a href="../webpage/mymusic.html">我的音乐</a></li>
+				</ul>
+			</nav>
+			<div class="myg_header_user_block">
+				<div class="myg_header_user">
+						<img src="../img/gougou.jpg" class="myg_header_user_img"/>
+						<div class="myg_header_userinfo">
+							<div class="myg_header_userinfo_top">
+								<img src="../img/gougou.jpg" class="myg_header_userinfo_img"/>
+								<span class="myg_header_userinfo_name">星辰大海</span>
+							</div>
+							<div class="myg_header_userinfo_bottom">
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_mymusicbtn">我的音乐</div>
+								</div>
+								<div class="myg_header_userinfo_bottom_block">
+									<div class="myg_header_userinfo_logo"></div>
+									<div class="myg_header_userinfo_tuichubtn">退出登录</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="myg_header_searchbox">
+		        <form>
+		            <input type="text" placeholder="歌曲/歌手/MV">
+					<i class="layui-icon layui-icon-search myg_header_searchbtn" style="font-size: 25px; color: #1E9FFF;"></i>	
+		        </form>
+			</div>			
+		</div>
+	</header>
+	<!--页头结束-->
+	<!--music-->
+	<div id="myg_mymusic_bgimg">
+		<div class="myg_mymusic_userimg">
+			<img src="../img/gougou.jpg" />
+			<p>星辰大海</p>
+		</div>
+		<p class="myg_mymusic_mylike">我喜欢</p>
+		<p class="myg_mymusic_myenshrine">我的收藏</p>
+	</div>
+	<!--用户信息模块结束-->
+	<!--收藏歌曲模块开始-->
+	<div id="myg_mygmusic_enshrine">
+		<div class="myg_mygmusic_enshrine_classify">
+			<span>歌曲</span>
+			<span>专辑</span>
+			<span>MV</span>
+		</div>
+		<div class="myg_mygmusic_enshrine_btnblock">
+			<div class="myg_mygmusic_enshrine_bofangbtn"><i class="layui-icon layui-icon-play myg_mygmusic_enshrine_bofangbtnicon"></i>播放全部</div>
+			<div class="myg_mygmusic_enshrine_xiazaibtn"><i class="layui-icon layui-icon-download-circle myg_mygmusic_enshrine_xiazaibtnicon"></i>下载</div>
+		</div>
+		
+		<div class="myg_mygmusic_classifyblock">
+			<div class="myg_mygmusic_classifyblock_header">
+				<div><span>歌曲</span></div>
+				<div>歌手</div>
+				<div>专辑</div>
+				<div>时长</div>
+			</div>
+			<ul class="">
+				<li class="myg_mygmusic_classifyblock_music myg_mygmusic_classifyblock_music_odd">
+					<div class="myg_mygmusic_classifyblock_music_name">
+						<span>夏天的风</span>
+						<div class="myg_mygmusic_musicbtngroup">
+							<ul class="myg_mygmusic_musicbtngroup_icon">								
+								<li><img src="../img/icon/播放.png" alt="播放"/></li>
+								<li><img src="../img/icon/添加.png" alt="添加"/></li>
+								<li><img src="../img/icon/下载.png" alt="下载"/></li>
+								<li><img src="../img/icon/分享.png" alt="分享"/></li>
+							</ul> 
+						</div>
+					</div>
+					<div class="myg_mygmusic_classifyblock_music_singer">许嵩</div>
+					<div class="myg_mygmusic_classifyblock_music_album">寻宝游戏</div>
+					<div class="myg_mygmusic_classifyblock_music_time">04:27</div>
+				</li>
+				<li class="myg_mygmusic_classifyblock_music myg_mygmusic_classifyblock_music_both">
+					<div class="myg_mygmusic_classifyblock_music_name">
+						<span>Faded</span>
+						<div class="myg_mygmusic_musicbtngroup">
+							<ul class="myg_mygmusic_musicbtngroup_icon">				
+								<li><img src="../img/icon/播放.png" alt="播放"/></li>
+								<li><img src="../img/icon/添加.png" alt="添加"/></li>
+								<li><img src="../img/icon/下载.png" alt="下载"/></li>
+								<li><img src="../img/icon/分享.png" alt="分享"/></li>
+							</ul> 
+						</div>
+					</div>
+					<div class="myg_mygmusic_classifyblock_music_singer">许嵩</div>
+					<div class="myg_mygmusic_classifyblock_music_album">寻宝游戏</div>
+					<div class="myg_mygmusic_classifyblock_music_time">04:27</div>
+				</li>
+				<li class="myg_mygmusic_classifyblock_music myg_mygmusic_classifyblock_music_odd">
+					<div class="myg_mygmusic_classifyblock_music_name">
+						<span>明智之举</span>
+						<div class="myg_mygmusic_musicbtngroup">
+							<ul class="myg_mygmusic_musicbtngroup_icon">								
+								<li><img src="../img/icon/播放.png" alt="播放"/></li>
+								<li><img src="../img/icon/添加.png" alt="添加"/></li>
+								<li><img src="../img/icon/下载.png" alt="下载"/></li>
+								<li><img src="../img/icon/分享.png" alt="分享"/></li>
+							</ul> 
+						</div>
+					</div>
+					<div class="myg_mygmusic_classifyblock_music_singer">许嵩</div>
+					<div class="myg_mygmusic_classifyblock_music_album">寻宝游戏</div>
+					<div class="myg_mygmusic_classifyblock_music_time">04:27</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--收藏歌曲模块结束-->
+	<!--页脚开始-->
+	<footer>
+		<div class="myg_footer_text">
+			<a href="#">关于民谣音乐馆</a> | 
+			<a href="#">关于作者</a> | 
+			<a href="#">关于歌曲</a><br />
+			<span class="myg_footer_copy">Copyright &copy;2018-2020 codger.All Rights Reserved</span>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script type="text/javascript" src="../js/myg_public.js" ></script>
+	<script type="text/javascript" src="../layui-v2.3.0/layui/layui.js" ></script>
+</body>
+</html>
