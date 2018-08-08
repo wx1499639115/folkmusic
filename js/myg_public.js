@@ -751,8 +751,6 @@ $(function() {
 					return false;
 				}
 			})
-			
-			//哈哈哈哈，我在学习使用git
 		}
 	})
 })
