@@ -1,0 +1,23 @@
+已ok/长期提升中的skill：
+	1：html/h5
+	2：css/c3
+	3：js(不熟)
+	4：jq
+	5：ajax/json/xml
+	6：框架：
+		bs/layui/hui
+	7：后端：php 
+急需提升：
+	1：js正则表达式（ojbk）
+	2：git的使用（ojbk）
+	3：ps切图（ojbk）
+	4：php进阶
+	5：mysql
+近期实战目标：
+	1：完成前端总结app制作
+	2：完成个人主页设计
+	3：完成wap页游导航站
+	4：入手wap页游开发
+后续提升方向：
+	后端：tp5框架
+	前端：vue框架
